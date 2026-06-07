@@ -1,26 +1,35 @@
-using system;
+using System;
 namespace arrays
 {
-public class fazendoarrays
-{
-    static void main 
-string [] calculandosete = new string[7]
-Console.WriteLine ("escolha um numero pra somar");
-calculandosete[0]
-Console.WriteLine ("escolha um numero pra somar");
-calculandosete[1]
-Console.WriteLine ("escolha um numero pra somar");
-calculandosete[2]
-Console.WriteLine ("escolha um numero pra somar");
-calculandosete[3]
-Console.WriteLine ("escolha um numero pra somar");
-calculandosete[4]
-Console.WriteLine ("escolha um numero pra somar");
-calculandosete[5]
-Console.WriteLine ("escolha um numero pra somar");
-calculandosete[6]
-for (int i = 0 <= 6; 1++);
+    public class fazendoArrays
+    {
+        static void main(string[]args)
+        {
+            int[]calculandosete = new int[7];
+            for(int i = 0; i < 7; i++)
+            {
+        
+                Console.WriteLine("escolha um numero para somar");
+                string Entrada = Console.ReadLine()
+                if (int.TryParse(Entrada,out int numero))
+                {
+                    calculandosete[i] = numero;
+                }
+                else
+                {
+                    Console.WriteLine("entrada invalida");
+                    calculandosete[i] = 0;
+                }
 
-Console.WriteLine("esse foi o resultado da sua soma"+ calculandosete);
+                        
+                
+            int soma = 0;
+            for(int i = 0; i < 7; i++)
+            {
+                soma += calculandosete[i]
+            }
+            Console.WriteLine("esse foi o resultado da sua soma;" + soma);
+        }
+    }
 }
-}
+
