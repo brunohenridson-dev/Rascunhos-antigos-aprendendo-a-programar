@@ -1,0 +1,32 @@
+using System;
+using System.Data.Common;
+using System.Diagnostics.Eventing.Reader;
+using System.Reflection;
+using arrays;
+namespace arrays
+{
+    public class Calculator
+    {
+        public static int Sum(int a,int b)
+        {
+            return a + b;
+        }
+    
+public static int multiply(int a, int b)
+        {
+            return (a * b);
+        }
+    }
+}
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+        Calculator calculator = new Calculator();
+        int sum = Calculator.Sum(1, 2);
+        Console.WriteLine(sum);
+        int product = Calculator.multiply(1, 2);
+        Console.WriteLine(product);
+
+    }
+}
