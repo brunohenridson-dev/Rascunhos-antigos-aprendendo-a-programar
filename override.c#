@@ -1,0 +1,32 @@
+using System;
+using System.Data.Common;
+using System.Reflection;
+namespace arrays
+{
+public class Student
+{
+    public string Name {get; set;}
+    public int Age {get; set;}
+    public double AvarageGrade {get; set;}
+        public override string ToString()
+        {
+            return Name + " "  + Age + " ("+AvarageGrade")";
+        }
+}
+{
+    class Program
+    {
+        private static void Main(string[] args)
+        {
+            int number = 5;
+            Student s = new Student();
+            s . Name = "bruno";
+            s . Age = 21;
+            s . AvarageGrade = 9.5;
+
+            Console.WriteLine("your number is:" + number.ToString());
+            Console.WriteLine(s.ToString);
+        }
+    }
+}  
+}
